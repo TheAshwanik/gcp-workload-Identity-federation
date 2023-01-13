@@ -17,7 +17,7 @@ jobs:
           workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
           service_account: '${{ secrets.GCP_SA_NAME }}'
           audience: '${{ secrets.GCP_POOL_AUDIENCE }}'
-          #access_token_lifetime: '300s' # optional, default: '3600s' (1 hour)
+          access_token_lifetime: '3600s' # optional, default: '3600s' (1 hour)
 
       - name: 'Access secret'
         run: |-
